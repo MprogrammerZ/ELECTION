@@ -15,16 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         btnVoteBolsonaro.setOnClickListener {
             resultB++
-            Toast.makeText(this, "Bolsonaro tem $resultB votos e o Lula tem $resultL votos", Toast.LENGTH_SHORT).show()
-        }
+            takeResult(resultB, resultL)
+             }
 
         btnVoteLula.setOnClickListener {
             resultL++
-            Toast.makeText(this, "Bolsonaro tem $resultB votos e o Lula tem $resultL votos", Toast.LENGTH_SHORT).show()
-        }
+            takeResult(resultB, resultL)
+              }
+    }
 
-
-
+    fun takeResult(count1: Int, count2: Int){
+        txtResult.text = "For now Bolsonaro has $count1 of valid votes and  Lula has $count2 of valid votes. "
     }
     }
 
