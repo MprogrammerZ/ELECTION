@@ -12,21 +12,34 @@ class MainActivity : AppCompatActivity() {
 
         var resultB: Int = 0
         var resultL: Int = 0
+        var count: Int = 1
 
         btnVoteBolsonaro.setOnClickListener {
-            resultB++
-            takeResult(resultB, resultL)
+            if(count % 3 == 0){resultL++
+                count++}else{resultB++
+                count++}
              }
 
         btnVoteLula.setOnClickListener {
             resultL++
-            takeResult(resultB, resultL)
+            count++
               }
+        btnResult.setOnClickListener {
+            toResult(resultB, resultL)
+        }
+
     }
 
     fun takeResult(count1: Int, count2: Int){
-        txtResult.text = "For now Bolsonaro has $count1 of valid votes and  Lula has $count2 of valid votes. "
+        txtResult.text = "For now Bolsonaro has $count1 valid votes and  Lula has $count2 valid votes. "
     }
+
+    fun toResult(vote1: Int, vote2: Int){
+        txtResult.text = "For now Bolsonaro has $vote1 valid votes and  Lula has $vote2 valid votes. "
+
+    }
+
+
     }
 
 

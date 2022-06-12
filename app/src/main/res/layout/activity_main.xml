@@ -12,7 +12,6 @@
         android:layout_width="141dp"
         android:layout_height="154dp"
         android:layout_marginEnd="49dp"
-        android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toTopOf="@+id/btnVoteLula"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/presence_audio_busy" />
@@ -34,12 +33,12 @@
         android:id="@+id/btnVoteLula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="210dp"
-        android:text="Button"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="124dp"
+        android:text="VOTE"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -60,12 +59,12 @@
         android:id="@+id/btnVoteBolsonaro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginBottom="210dp"
-        android:text="Button"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="124dp"
+        android:text="VOTE"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -86,7 +85,6 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="41dp"
-        android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toTopOf="@+id/btnVoteBolsonaro"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/presence_audio_online" />
@@ -103,6 +101,18 @@
         android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="result"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
